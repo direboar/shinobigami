@@ -27,23 +27,35 @@ export const mainListItems = (): JSX.Element => {
         </ListItemIcon>
         <ListItemText primary="Study" />
       </ListItem>
-      <ListItem button>
+      <ListItem button onClick={() => router.push("table")}>
         <ListItemIcon>
           <PeopleIcon />
         </ListItemIcon>
-        <ListItemText primary="Customers" />
+        <ListItemText primary="Table" />
       </ListItem>
-      <ListItem button>
+      <ListItem button onClick={() => router.push("secrettable")}>
         <ListItemIcon>
           <BarChartIcon />
         </ListItemIcon>
-        <ListItemText primary="Reports" />
+        <ListItemText primary="秘密" />
       </ListItem>
       <ListItem button>
         <ListItemIcon>
           <LayersIcon />
         </ListItemIcon>
-        <ListItemText primary="Integrations" />
+        <ListItemText primary="感情" />
+      </ListItem>
+      <ListItem button>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="プロット管理" />
+      </ListItem>
+      <ListItem button>
+        <ListItemIcon>
+          <LayersIcon />
+        </ListItemIcon>
+        <ListItemText primary="サイクル進行管理" />
       </ListItem>
     </div>
   );
