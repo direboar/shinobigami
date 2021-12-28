@@ -1,5 +1,5 @@
 import * as React from "react";
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
+import { styled, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import MuiDrawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
@@ -17,8 +17,8 @@ import { mainListItems, secondaryListItems } from "../components/listitems";
 
 import { AppProps } from "next/app";
 import { CacheProvider, EmotionCache } from "@emotion/react";
-import theme from "../src/theme";
-import createEmotionCache from "../src/createEmotionCache";
+import theme from "../src/app/theme";
+import createEmotionCache from "../src/app/createEmotionCache";
 import Head from 'next/head';
 
 
