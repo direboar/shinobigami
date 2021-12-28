@@ -1,4 +1,9 @@
 import * as React from "react";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import Button from "@mui/material/Button"
+import Typography from "@mui/material/Typography";
 
 const About = (): JSX.Element => {
   const [name, setName] = React.useState("world");
@@ -14,10 +19,12 @@ const About = (): JSX.Element => {
   };
 
   return (
-    <>
-      <div>hello,{name}</div>
-      <button onClick={onClick}>update</button>
-    </>
+    <Paper>
+        <Typography variant="body1">
+            hello,{name}
+        </Typography>
+        <Button variant="contained" onClick={onClick}>update</Button>
+    </Paper>
   );
 };
 
